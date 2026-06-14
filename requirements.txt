@@ -1,0 +1,20 @@
+# ── Core ML ──────────────────────────────────────────────────────────────────
+sentence-transformers>=2.7.0
+numpy>=1.26.0
+scikit-learn>=1.4.0          # used internally by sentence-transformers
+
+# ── Data handling ─────────────────────────────────────────────────────────────
+pandas>=2.2.0
+
+# ── Streamlit UI ──────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+plotly>=5.20.0
+
+# ── CV / document parsing ─────────────────────────────────────────────────────
+pdfplumber>=0.11.0           # PDF text extraction
+python-docx>=1.1.0           # DOCX text extraction
+
+# ── PyTorch (CPU-only; replace with cu118 wheel for GPU) ─────────────────────
+# sentence-transformers installs torch automatically.
+# For a lighter install on CPU-only machines, you can pre-install:
+# torch>=2.2.0  --index-url https://download.pytorch.org/whl/cpu
